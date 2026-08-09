@@ -13,7 +13,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: red
-      accent: deep orange
+      accent: red
       toggle:
         icon: material/weather-night
         name: Cambiar al modo oscuro
@@ -21,7 +21,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: red
-      accent: deep orange
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Cambiar al modo claro
