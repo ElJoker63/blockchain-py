@@ -1,6 +1,7 @@
 site_name: blockchain-api
 site_description: Async Python client for the Blockchain.com Explorer API
 site_author: ElJoker63
+site_url: https://eljoker63.github.io/blockchain-py/
 repo_url: https://github.com/ElJoker63/blockchain-py
 repo_name: ElJoker63/blockchain-py
 
