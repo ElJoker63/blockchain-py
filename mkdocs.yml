@@ -12,16 +12,16 @@ theme:
     # Modo Claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: red
-      accent: red
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Cambiar al modo oscuro
     # Modo Oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: red
-      accent: red
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Cambiar al modo claro
