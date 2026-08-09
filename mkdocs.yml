@@ -1,0 +1,79 @@
+site_name: blockchain-api
+site_description: Async Python client for the Blockchain.com Explorer API
+site_author: ElJoker63
+repo_url: https://github.com/ElJoker63/blockchain-py
+repo_name: ElJoker63/blockchain-py
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: docs/overrides
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ElJoker63
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/blockchain-api/
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Instalación: installation.md
+  - Inicio Rápido: quickstart.md
+  - API:
+      - Cliente: api/client.md
+      - Blockchain Data: api/blockchain.md
+      - Simple Query: api/simple-query.md
+      - Exchange Rates: api/exchange-rates.md
+      - Charts: api/charts.md
+      - WebSocket: api/websocket.md
+  - Tipos de Datos: types.md
+  - Ejemplos: examples.md

@@ -1,0 +1,23 @@
+.md-footer {
+  text-align: center;
+}
+
+.md-footer p {
+  margin: 0.5rem 0;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+.highlight code {
+  border-radius: 6px;
+}
+
+.admonition {
+  border-radius: 8px;
+}
+
+.tabbed-set > input:checked + label {
+  border-color: var(--md-accent-fg-color);
+}

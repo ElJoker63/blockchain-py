@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "blockchain-api"
+dynamic = ["version"]
+description = "Async Python client for the Blockchain.com Explorer API"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "ElJoker63", email = "eljoker63@udyat.site" },
+]
+keywords = ["blockchain", "bitcoin", "api", "async", "cryptocurrency"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business :: Financial",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx>=0.27",
+    "websockets>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.23",
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ElJoker63/blockchain-py"
+Documentation = "https://github.com/ElJoker63/blockchain-py#readme"
+Repository = "https://github.com/ElJoker63/blockchain-py"
+Issues = "https://github.com/ElJoker63/blockchain-py/issues"
+
+[tool.hatch.version]
+path = "src/blockchain/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/blockchain"]
