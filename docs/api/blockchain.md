@@ -6,8 +6,6 @@ Acceso a bloques, transacciones, direcciones y UTXOs de Bitcoin.
 api = client.blockchain
 ```
 
----
-
 ## Bloques
 
 ### `get_block(block_hash, *, as_hex=False)`
@@ -28,8 +26,6 @@ block = await client.blockchain.get_block(
 print(f"Altura: {block.height}, Nonce: {block.nonce}")
 ```
 
----
-
 ### `get_block_by_height(height)`
 
 Obtiene uno o más bloques en una altura específica.
@@ -46,8 +42,6 @@ for b in result.blocks:
     print(b["hash"])
 ```
 
----
-
 ### `get_latest_block()`
 
 Obtiene el último bloque de la cadena más larga.
@@ -58,8 +52,6 @@ Obtiene el último bloque de la cadena más larga.
 latest = await client.blockchain.get_latest_block()
 print(f"Bloque #{latest.height}: {latest.hash}")
 ```
-
----
 
 ### `get_blocks_by_time(time_ms)`
 
@@ -75,8 +67,6 @@ Obtiene bloques minados en un timestamp específico.
 blocks = await client.blockchain.get_blocks_by_time(1234567890000)
 ```
 
----
-
 ### `get_blocks_by_pool(pool_name)`
 
 Obtiene bloques minados por un pool específico.
@@ -90,8 +80,6 @@ Obtiene bloques minados por un pool específico.
 ```python
 blocks = await client.blockchain.get_blocks_by_pool("antpool")
 ```
-
----
 
 ## Transacciones
 
@@ -111,8 +99,6 @@ tx = await client.blockchain.get_transaction("b6f699...")
 print(f"Inputs: {tx.vin_sz}, Outputs: {tx.vout_sz}")
 ```
 
----
-
 ### `get_unconfirmed_transactions()`
 
 Obtiene todas las transacciones pendientes (mempool).
@@ -123,8 +109,6 @@ Obtiene todas las transacciones pendientes (mempool).
 pending = await client.blockchain.get_unconfirmed_transactions()
 print(f"Transacciones pendientes: {len(pending)}")
 ```
-
----
 
 ## Direcciones
 
@@ -148,8 +132,6 @@ info = await client.blockchain.get_address(
 print(f"Total recibido: {info['total_received'] / 1e8} BTC")
 ```
 
----
-
 ### `get_multi_address(addresses, *, limit=50, offset=0)`
 
 Obtiene información de múltiples direcciones (o xpubs) a la vez.
@@ -168,8 +150,6 @@ for addr in multi.addresses:
     print(f"{addr.address}: {addr.final_balance / 1e8} BTC")
 ```
 
----
-
 ## Balance
 
 ### `get_balance(addresses)`
@@ -186,8 +166,6 @@ Obtiene el balance de una o más direcciones.
 balances = await client.blockchain.get_balance(["addr1", "addr2"])
 # Retorna: {"addr1": {"final_balance": 50000, "n_tx": 10, ...}, ...}
 ```
-
----
 
 ## UTXOs
 
@@ -213,9 +191,3 @@ for utxo in utxos:
     print(f"TX: {utxo.tx_hash}, Valor: {utxo.value / 1e8} BTC")
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

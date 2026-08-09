@@ -2,8 +2,6 @@
 
 Todos los tipos son `dataclass` congelados (inmutables) definidos en `blockchain.types`.
 
----
-
 ## Block
 
 Bloque de Bitcoin completo.
@@ -24,8 +22,6 @@ class Block:
     tx: list[dict[str, Any]] = field(default_factory=list)
 ```
 
----
-
 ## BlockHeight
 
 Resultado de consultar bloques por altura.
@@ -35,8 +31,6 @@ Resultado de consultar bloques por altura.
 class BlockHeight:
     blocks: list[dict[str, Any]] = field(default_factory=list)
 ```
-
----
 
 ## LatestBlock
 
@@ -51,8 +45,6 @@ class LatestBlock:
     height: int = 0
     txIndexes: int = 0
 ```
-
----
 
 ## Transaction
 
@@ -75,8 +67,6 @@ class Transaction:
     out: list[dict[str, Any]] = field(default_factory=list)
 ```
 
----
-
 ## TransactionInput
 
 Input individual de una transacción.
@@ -90,8 +80,6 @@ class TransactionInput:
     witness: str = ""
 ```
 
----
-
 ## TransactionOutput
 
 Output individual de una transacción.
@@ -103,8 +91,6 @@ class TransactionOutput:
     script: str = ""
     addr: str = ""
 ```
-
----
 
 ## AddressInfo
 
@@ -121,8 +107,6 @@ class AddressInfo:
     final_balance: int = 0
 ```
 
----
-
 ## Balance
 
 Resultado de balance para una dirección.
@@ -135,8 +119,6 @@ class Balance:
     total_received: int = 0
     total_sent: int = 0
 ```
-
----
 
 ## MultiAddressInfo
 
@@ -153,8 +135,6 @@ class MultiAddressInfo:
     final_balance: int = 0
 ```
 
----
-
 ## MultiAddressResponse
 
 Respuesta de consulta multi-dirección.
@@ -165,8 +145,6 @@ class MultiAddressResponse:
     addresses: list[MultiAddressInfo] = field(default_factory=list)
     txs: list[dict[str, Any]] = field(default_factory=list)
 ```
-
----
 
 ## UnspentOutput
 
@@ -188,8 +166,6 @@ class UnspentOutput:
 !!! note "Orden del hash"
     `tx_hash` viene en orden de bytes invertido. Usa `tx_hash_big_endian` para el hash estándar.
 
----
-
 ## UnconfirmedTransaction
 
 Transacción pendiente (mempool).
@@ -209,8 +185,6 @@ class UnconfirmedTransaction:
     out: list[dict[str, Any]] = field(default_factory=list)
 ```
 
----
-
 ## ChartData
 
 Respuesta de la API de gráficas.
@@ -226,8 +200,6 @@ class ChartData:
     values: list[ChartValue] = field(default_factory=list)
 ```
 
----
-
 ## ChartValue
 
 Punto individual de datos en una gráfica.
@@ -239,8 +211,6 @@ class ChartValue:
     y: float = 0.0  # Valor del dato
 ```
 
----
-
 ## Ticker
 
 Ticker completo con todas las divisas.
@@ -250,8 +220,6 @@ Ticker completo con todas las divisas.
 class Ticker:
     currencies: dict[str, TickerCurrency] = field(default_factory=dict)
 ```
-
----
 
 ## TickerCurrency
 
@@ -266,8 +234,6 @@ class TickerCurrency:
     sell: float = 0.0         # Precio de venta
     symbol: str = ""          # Símbolo (ej: "$")
 ```
-
----
 
 ## ExchangeRate
 
@@ -284,8 +250,6 @@ class ExchangeRate:
     symbol: str = ""
 ```
 
----
-
 ## SimpleQueryResult
 
 Resultado de la Simple Query API (texto plano parseado).
@@ -297,9 +261,3 @@ class SimpleQueryResult:
     value: Any = None  # int, float, o str
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

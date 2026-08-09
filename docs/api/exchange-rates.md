@@ -6,8 +6,6 @@ Datos de ticker y conversión de divisas para Bitcoin.
 api = client.exchange
 ```
 
----
-
 ## `get_ticker()`
 
 Obtiene el ticker completo con todas las divisas soportadas.
@@ -44,8 +42,6 @@ print(f"EUR: €{eur.last:,.2f}")
 print(f"GBP: £{gbp.last:,.2f}")
 ```
 
----
-
 ## `get_exchange_rate(currency)`
 
 Obtiene el ticker para una sola moneda.
@@ -66,8 +62,6 @@ print(f"Venta:  ${rate.sell:,.2f}")
 !!! error "ValueError"
     Se lanza `ValueError` si la moneda no es soportada.
 
----
-
 ## `to_btc(currency, value)`
 
 Convierte una cantidad en moneda fiduciaria a Bitcoin.
@@ -86,8 +80,6 @@ print(f"$1,000 = {btc:.8f} BTC")
 btc = await client.exchange.to_btc("EUR", 500)
 print(f"€500 = {btc:.8f} BTC")
 ```
-
----
 
 ## Ejemplo completo
 
@@ -113,9 +105,3 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

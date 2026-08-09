@@ -8,8 +8,6 @@ ws = client.websocket()
 
 Se conecta a `wss://ws.blockchain.info/inv`.
 
----
-
 ## Conexión
 
 ### Como context manager
@@ -30,8 +28,6 @@ await ws.connect()
 # ... usar ...
 await ws.close()
 ```
-
----
 
 ## Registro de handlers
 
@@ -58,8 +54,6 @@ El handler recibe el payload `x` del mensaje WebSocket que contiene:
 | `bits` | `str` | Bits |
 | `nonce` | `int` | Nonce |
 
----
-
 ### `on_transaction(handler)`
 
 Registra un handler para transacciones nuevas (de suscripciones a dirección).
@@ -81,8 +75,6 @@ El handler recibe el payload `x` del mensaje que contiene:
 | `out` | `list` | Lista de outputs (con `addr` y `value`) |
 | `time` | `int` | Timestamp |
 
----
-
 ### `on_message(handler)`
 
 Registra un handler para **todos** los mensajes (raw JSON).
@@ -93,8 +85,6 @@ async def on_raw(msg: dict):
 
 ws.on_message(on_raw)
 ```
-
----
 
 ## Suscripciones
 
@@ -119,8 +109,6 @@ await ws.subscribe_address("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
 await ws.unsubscribe_address("1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa")
 ```
 
----
-
 ## Pings
 
 ```python
@@ -128,8 +116,6 @@ await ws.ping()             # Keep-alive
 await ws.ping_block()       # Solicitar último bloque
 await ws.ping_transaction() # Solicitar última transacción
 ```
-
----
 
 ## Ejecución
 
@@ -150,8 +136,6 @@ task = await ws.start_background()
 # ... hacer otras cosas ...
 await task  # o await ws.close()
 ```
-
----
 
 ## Ejemplo completo: monitoreo en tiempo real
 
@@ -188,8 +172,6 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
 ## Ejemplo: alertas por dirección
 
 ```python
@@ -216,9 +198,3 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

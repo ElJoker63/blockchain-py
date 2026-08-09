@@ -67,9 +67,3 @@ await client.close()
 !!! note "Context Manager"
     Cuando usas `async with BlockchainClient()`, el cierre automático se ejecuta al salir del bloque.
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

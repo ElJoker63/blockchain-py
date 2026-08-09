@@ -118,9 +118,3 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>
