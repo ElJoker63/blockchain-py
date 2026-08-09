@@ -1,40 +1,40 @@
-/* Colores corporativos de Blockchain.com */
+/* Colores corporativos de Blockchain.com — #AA0E30 */
 
 :root {
-  /* Color del Header / Barra de Navegación (Rojo Blockchain.com) */
-  --md-primary-fg-color: #E31937 !important;
-  --md-primary-fg-color--dark: #B71C1C !important;
+  /* Color del Header / Barra de Navegación */
+  --md-primary-fg-color: #AA0E30 !important;
+  --md-primary-fg-color--dark: #8A0B27 !important;
 
-  /* Color de Acento (Naranja/Naranja oscuro) */
-  --md-accent-fg-color: #FF6D00 !important;
-  --md-accent-fg-color--transparent: rgba(255, 109, 0, 0.1) !important;
+  /* Color de Acento (rojo oscuro) */
+  --md-accent-fg-color: #8A0B27 !important;
+  --md-accent-fg-color--transparent: rgba(170, 14, 48, 0.1) !important;
 }
 
 /* Cambiar color de selección de pestañas activas */
 .md-tabs__link--active {
-  color: #FF6D00 !important;
+  color: #AA0E30 !important;
 }
 
 /* Personalizar links en el contenido */
 .md-content a {
-  color: #E31937;
+  color: #AA0E30;
 }
 
 .md-content a:hover {
-  color: #B71C1C;
+  color: #8A0B27;
 }
 
 /* Botón de volver arriba */
 .md-top {
-  background-color: #E31937 !important;
+  background-color: #AA0E30 !important;
 }
 
 /* Bordes y detalles del menú lateral */
 .md-nav__link--active {
-  color: #E31937 !important;
+  color: #AA0E30 !important;
 }
 
-/* Footer personalizado */
+/* Footer */
 .md-footer {
   text-align: center;
 }
