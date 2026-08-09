@@ -6,8 +6,6 @@ Datos históricos y gráficas de la red Bitcoin.
 api = client.charts
 ```
 
----
-
 ## `get_chart(chart_name, **options)`
 
 Obtiene datos de una gráfica en formato JSON.
@@ -45,8 +43,6 @@ for point in chart.values[:5]:
     print(f"  {point.x}: ${point.y:,.2f}")
 ```
 
----
-
 ## `get_chart_raw(chart_name, **options)`
 
 Obtiene datos de una gráfica como texto CSV puro.
@@ -65,8 +61,6 @@ csv_data = await client.charts.get_chart_raw(
 print(csv_data)
 ```
 
----
-
 ## `list_available_charts()`
 
 Retorna la lista de identificadores de gráficas disponibles.
@@ -79,8 +73,6 @@ print(f"Gráficas disponibles: {len(charts)}")
 for name in charts:
     print(f"  - {name}")
 ```
-
----
 
 ## Gráficas disponibles
 
@@ -114,8 +106,6 @@ for name in charts:
 !!! tip
     Usa `list_available_charts()` para obtener la lista completa actualizada.
 
----
-
 ## Ejemplo completo
 
 ```python
@@ -147,9 +137,3 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

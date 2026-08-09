@@ -39,9 +39,3 @@ print(blockchain.__version__)  # 1.0.0
 | `httpx` | ≥ 0.27 | Cliente HTTP asincrónico |
 | `websockets` | ≥ 13.0 | Conexiones WebSocket |
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

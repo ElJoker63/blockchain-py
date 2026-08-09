@@ -1,16 +1,6 @@
 # blockchain-api
 
-<p align="center">
-  <strong>Cliente Python asincrónico para la API de Blockchain.com Explorer</strong>
-</p>
 
-<p align="center">
-  <a href="https://pypi.org/project/blockchain-api/"><img src="https://img.shields.io/pypi/v/blockchain-api?color=deep+orange&logo=pypi&logoColor=white" alt="PyPI"></a>
-  <a href="https://pypi.org/project/blockchain-api/"><img src="https://img.shields.io/pypi/pyversions/blockchain-api?logo=python&logoColor=white" alt="Python"></a>
-  <a href="https://github.com/ElJoker63/blockchain-py/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/blockchain-api" alt="License"></a>
-</p>
-
----
 
 ## ¿Qué es?
 
@@ -58,9 +48,3 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>

@@ -1,23 +1,44 @@
+/* Colores corporativos de Blockchain.com */
+
+:root {
+  /* Color del Header / Barra de Navegación (Rojo Blockchain.com) */
+  --md-primary-fg-color: #E31937 !important;
+  --md-primary-fg-color--dark: #B71C1C !important;
+
+  /* Color de Acento (Naranja/Naranja oscuro) */
+  --md-accent-fg-color: #FF6D00 !important;
+  --md-accent-fg-color--transparent: rgba(255, 109, 0, 0.1) !important;
+}
+
+/* Cambiar color de selección de pestañas activas */
+.md-tabs__link--active {
+  color: #FF6D00 !important;
+}
+
+/* Personalizar links en el contenido */
+.md-content a {
+  color: #E31937;
+}
+
+.md-content a:hover {
+  color: #B71C1C;
+}
+
+/* Botón de volver arriba */
+.md-top {
+  background-color: #E31937 !important;
+}
+
+/* Bordes y detalles del menú lateral */
+.md-nav__link--active {
+  color: #E31937 !important;
+}
+
+/* Footer personalizado */
 .md-footer {
   text-align: center;
 }
 
-.md-footer p {
-  margin: 0.5rem 0;
-}
-
-.md-typeset h1 {
-  font-weight: 700;
-}
-
-.highlight code {
-  border-radius: 6px;
-}
-
-.admonition {
-  border-radius: 8px;
-}
-
-.tabbed-set > input:checked + label {
-  border-color: var(--md-accent-fg-color);
+.md-footer__inner {
+  text-align: center;
 }

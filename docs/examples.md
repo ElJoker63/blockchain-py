@@ -2,8 +2,6 @@
 
 Ejemplos prácticos de uso de la librería.
 
----
-
 ## Monitoreo de dirección en tiempo real
 
 Detecta cuando una dirección recibe fondos:
@@ -30,8 +28,6 @@ async def main():
 
 asyncio.run(main())
 ```
-
----
 
 ## Dashboard de métricas de la red
 
@@ -63,8 +59,6 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
 ## Análisis de dirección
 
 ```python
@@ -89,8 +83,6 @@ async def main():
 
 asyncio.run(main())
 ```
-
----
 
 ## Gráfica de precio y estadísticas
 
@@ -125,8 +117,6 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
 ## Comparar múltiples direcciones
 
 ```python
@@ -152,8 +142,6 @@ async def main():
 
 asyncio.run(main())
 ```
-
----
 
 ## Seguimiento de bloques nuevos
 
@@ -181,8 +169,6 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
 ## Exportar datos de gráficas a CSV
 
 ```python
@@ -204,8 +190,6 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
 ## Verificar si una transacción fue rechazada
 
 ```python
@@ -225,9 +209,3 @@ async def main():
 asyncio.run(main())
 ```
 
----
-
-<p align="center">
-  Desarrollado con ❤️ por <strong>ElJoker63</strong><br>
-  <em>&lt;☕&gt;+☕️=❤️</em>
-</p>
